@@ -132,6 +132,7 @@ a:hover {
 	width: 100%;
 	flex-direction: row;
 	padding: 1rem 0rem;
+	flex: 0 0 50%;
 	margin-bottom: 5vw;
 }
 
@@ -143,12 +144,12 @@ a:hover {
 	flex-direction: row;
 	padding: 1rem 0rem;
 	font-weight: bold;
+	font-size: 1vw;
 }
 
 .Logo {
 	color: var(--font);
 	font-size: 3vw;
-	width: 50%;
 	padding: 1rem 3vw;
 }
 
@@ -245,14 +246,28 @@ a.selected {
 /* Mobile */
 
 @media screen and (max-width: 1200px) {
+	.Logo {
+		text-align: center;
+		font-size: 8vw;
+		width: 100%;
+	}
+
+	.navBar {
+		margin-bottom: 10vw;
+	}
+
 	.navBar_2 {
 		display: flex;
 		position: absolute;
 		right: 0;
-		width: 50%;
-		flex-direction: column;
-		padding: 1rem 0rem;
+		width: 100%;
+		flex-direction: row;
+		padding: 17vw 0;
 		font-size: 2vw;
+	}
+
+	a {
+		font-weight: bolder;
 	}
 }
 
