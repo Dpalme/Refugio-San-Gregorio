@@ -142,6 +142,7 @@ a:hover {
 	width: 50%;
 	flex-direction: row;
 	padding: 1rem 0rem;
+	font-weight: bold;
 }
 
 .Logo {
