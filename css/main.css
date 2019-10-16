@@ -22,6 +22,7 @@
 	--accent: #1e2a7e;
 	--accent2: #1a2050;
 	--accent3: #2e3db3;
+	--accent4: #b32e2e;
 }
 
 body {
@@ -236,11 +237,21 @@ a.selected {
 	margin-top: 3vw;
 	flex-direction: row;
 	width: 100%;
-	padding: 1rem 1rem;
-	max-width: 80%;
+	padding: 1rem 0rem;
+	max-width: 100%;
 	justify-content: center;
 	align-items: center;
 	text-align: left;
+}
+
+.textimg img{
+	margin-right: 5vw;
+}
+
+.important-link{
+	color: var(--accent4);
+	margin: auto;
+	font-weight: bold;
 }
 
 /* Mobile */
