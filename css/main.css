@@ -134,16 +134,15 @@ a:hover {
 	flex-direction: row;
 	padding: 1rem 0rem;
 	flex: 0 0 50%;
-	margin-bottom: 5vw;
 }
 
 .navBar_2 {
 	display: flex;
-	position: absolute;
 	right: 0;
-	width: 50%;
+	background: #0003;
+	width: 100%;
 	flex-direction: row;
-	padding: 1rem 0rem;
+	padding: 1% 0%;
 	font-weight: bold;
 	font-size: 1vw;
 }
@@ -236,7 +235,7 @@ a.selected {
 	margin: auto;
 	margin-top: 3vw;
 	flex-direction: row;
-	width: 100%;
+	width: 90%;
 	padding: 1rem 0rem;
 	max-width: 100%;
 	justify-content: center;
