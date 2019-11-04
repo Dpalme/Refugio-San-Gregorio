@@ -1,10 +1,29 @@
+@font-face {
+	font-family: 'GothamBook';
+	src: url('../fonts/gotham/GothamBook.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/gotham/GothamBook.woff') format('woff'),
+		/* Pretty Modern Browsers */ url('../fonts/gotham/GothamBook.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+	font-family: 'GothamLight';
+	src: url('../fonts/gotham/GothamLight.woff2') format('woff2'),
+		/* Super Modern Browsers */ url('../fonts/gotham/GothamLight.woff') format('woff'),
+		/* Pretty Modern Browsers */ url('../fonts/gotham/GothamLight.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
 * {
     box-sizing: border-box;
 }
   
 body {
-    margin: 0;
-    font-family: Arial;
+	background-color: var(--background);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(120deg, var(--bg), var(--bg2), var(--bg3), var(--bg4), var(--bg5));
+	color: var(--font);
+	font-family: 'GothamBook', sans-serif;
+	font-size: 1.2vw;
+	animation: Start 0.8s linear forwards;
 }
   
 .header {
