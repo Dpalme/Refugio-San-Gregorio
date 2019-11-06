@@ -49,15 +49,13 @@ p {
 	font-size: 2vw;
 }
 
-h4 {
-	font-weight: 100;
-	font-size: 1.5vw;
-	margin: auto;
-	margin-left: 15vw;
-}
-
-h3 {
-	font-weight: 100;
+h1 {
+	background: linear-gradient(90deg, var(--accent2), var(--accent3), var(--accent2));
+	font-family: 'GothamLight', sans-serif;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
 	font-size: 3vw;
 	margin-left: 5vw;
 	margin-top: 0.2vw;
@@ -65,24 +63,32 @@ h3 {
 }
 
 h2 {
-	font-weight: 100;
-	font-size: 5vw;
+	font-size: 2.5vw;
+	margin-left: 5vw;
+	margin-top: 0.2vw;
+	margin-bottom: 0.2vw;
+	font-family: 'GothamLight', sans-serif;
+}
+
+h3 {
+	font-size: 2vw;
 	margin-left: 5vw;
 	margin-top: 0.2vw;
 	margin-bottom: 0.2vw;
 }
 
-h1 {
-	background: linear-gradient(90deg, var(--accent2), var(--accent3), var(--accent2));
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	font-weight: 100;
-	font-size: 10vw;
-	margin-left: 5vw;
-	margin-top: 0.2vw;
-	margin-bottom: 0.2vw;
+h4 {
+	font-size: 1.5vw;
+	margin: auto;
+	margin-left: 15vw;
+}
+
+h5 {
+	font-size: 1.5vw;
+	margin: auto;
+	width: 80%;
+	font-family: 'GothamLight', sans-serif;
+	margin-bottom: 1vw;
 }
 
 input {
@@ -147,7 +153,6 @@ a:hover {
 }
 
 .Logo {
-	color: var(--font);
 	font-size: 3vw;
 	padding: 1rem 3vw;
 }
@@ -157,7 +162,7 @@ a:hover {
 	margin: 0;
 }
 
-a.selected {
+.selected {
 	color: var(--accent);
 	padding: 0.7rem;
 	text-decoration: underline;
