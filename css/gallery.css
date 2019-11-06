@@ -48,10 +48,6 @@ body {
     margin-top: 8px;
     vertical-align: middle;
 }
-
-.footer {
-    margin-top: 10vw;
-}
   
 @media (max-width: 800px) {
     .column {
