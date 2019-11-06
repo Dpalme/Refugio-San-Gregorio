@@ -110,7 +110,7 @@ a:hover {
 footer {
 	width: 90%;
 	padding: 5vw 0;
-	background: #0005;
+	background: var(--bg5);
 	margin: auto;
 	margin-bottom: 5%;
 	color: var(--font);
@@ -183,6 +183,10 @@ footer a {
 
 .navBar img {
 	margin-right: 2vw;
+}
+
+.navBar h5 {
+	text-align: right;
 }
 
 .navBar_2 {
@@ -410,7 +414,7 @@ footer a {
 	.navBar img {
 		width: 40vw;
 		margin: auto;
-		transform: translate(8%, 0);
+		transform: translate(3%, 0);
 	}
 
 	.navBar h5 {
