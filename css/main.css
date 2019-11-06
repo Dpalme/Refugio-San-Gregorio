@@ -22,9 +22,11 @@
 	--bg5: #BEBFBA;
 	--font: #182130;
 	--accent: #838C77;
-	--accent2: #FABE2C;
+	--accent2: #263382;
 	--accent3: #B0B4B3;
-	--accent4: rgb(255, 205, 96);
+	--accent4: #3b468b;
+	--logoMain: #263382;
+	--logoSec: #74593B;
 }
 
 
@@ -32,11 +34,10 @@
 
 
 body {
-	background-color: var(--background);
+	background-color: var(--accent3);
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-image: linear-gradient(120deg, var(--bg), var(--bg2), var(--bg3), var(--bg4), var(--bg5));
 	color: var(--font);
 	font-family: 'GothamLight', sans-serif;
 	font-size: 1.2vw;
@@ -77,8 +78,8 @@ h2 {
 h3 {
 	font-size: 2vw;
 	margin-left: 5vw;
-	margin-top: 0.2vw;
-	margin-bottom: 0.2vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
 }
 
 h4 {
@@ -103,7 +104,20 @@ img {
 }
 
 a:hover {
-	animation: Fade 0.2s linear forwards;
+	animation: FadeNavBar 0.2s linear forwards;
+}
+
+footer {
+	width: 90%;
+	padding: 5vw 0;
+	background: #0005;
+	margin: auto;
+	margin-bottom: 5%;
+	color: var(--font);
+}
+
+footer a {
+	color: var(--accent2);
 }
 
 
@@ -161,10 +175,14 @@ a:hover {
 
 .navBar {
 	display: flex;
-	width: 70%;
+	width: 80%;
 	margin: auto;
 	flex-direction: row;
 	padding: 1rem 0rem;
+}
+
+.navBar img {
+	margin-right: 2vw;
 }
 
 .navBar_2 {
@@ -180,18 +198,29 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	padding: 1rem;
+	margin: auto;
 	color: var(--font);
-	background: var(--accent);
+	background: var(--bg5);
 }
 
 .navBar_2 a:hover {
-	color: var(--font);
+	color: var(--accent3) !important;
 	background: var(--accent2) !important;
 }
 
 .Logo {
-	font-size: 3vw;
-	padding: 1rem 3vw;
+	font-size: 4vw;
+	margin: auto;
+	text-align: center;
+	color: var(--logoMain);
+	font-family: 'GothamBook', sans-serif;
+}
+
+.Logo_bottom {
+	font-size: 2vw;
+	margin: auto;
+	text-align: center;
+	color: var(--logoSec);
 }
 
 .text-primary {
@@ -200,7 +229,7 @@ a:hover {
 }
 
 .selected {
-	color: var(--font);
+	color: var(--accent3) !important;
 	padding: 0.7rem;
 	text-decoration: underline;
 	background: var(--accent2) !important;
@@ -269,6 +298,14 @@ a:hover {
 	flex-direction: row;
 }
 
+.content {
+	width: 90%;
+	padding: 5vw 0;
+	margin: auto;
+	background-color: var(--bg);
+	background-image: linear-gradient(120deg, var(--bg), var(--bg2), var(--bg3), var(--bg4), var(--bg5));
+}
+
 .textimg {
 	display: flex;
 	margin: auto;
@@ -290,7 +327,55 @@ a:hover {
 	color: var(--accent2);
 }
 
+.PayPal {
+	margin: auto;
+	font-size: 2vw;
+	color: var(--accent3);
+	background: var(--accent2);
+	border-radius: 10em;
+	padding: 1vw 2vw;
+}
 
+.full_flex {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: auto;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+}
+
+.full_flex_col {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.half_flex {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.half_flex_col {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 50%;
+	text-align: center;
+}
+
+.flex_element {
+	margin: auto;
+	margin-bottom: 1vw;
+	max-width: 50%;
+	width: 33%;
+}
 
 
 
@@ -315,9 +400,25 @@ a:hover {
 		flex-direction: column;
 	}
 
+	.navBar img {
+		width: 40vw;
+		margin: auto;
+		transform: translate(8%, 0);
+	}
+
+	.navBar h5 {
+		font-size: 5vw;
+		width: 100%;
+	}
+
+	.Logo {
+		margin: auto;
+		font-size: 12vw;
+	}
+
 	.navBar_2 {
-		margin: 0;
-		font-size: 2vw;
+		margin: auto;
+		font-size: 1.2vw;
 	}
 
 	a {
@@ -348,6 +449,13 @@ a:hover {
 	100% {
 		color: var(--font);
 		text-decoration: underline var(--font);
+	}
+}
+
+@keyframes FadeNavBar {
+	100% {
+		color: var(--accent3);
+		text-decoration: underline var(--accent3);
 	}
 }
 
