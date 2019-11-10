@@ -14,18 +14,6 @@
     box-sizing: border-box;
 }
   
-body {
-	background-color: var(--background);
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background-image: linear-gradient(120deg, var(--bg), var(--bg2), var(--bg3), var(--bg4), var(--bg5));
-	color: var(--font);
-	font-family: 'GothamBook', sans-serif;
-	font-size: 1.2vw;
-	animation: Start 0.8s linear forwards;
-}
-  
 .header {
     text-align: center;
     padding: 32px;
