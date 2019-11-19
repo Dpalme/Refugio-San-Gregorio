@@ -27,9 +27,6 @@
 }
 
 
-
-
-
 body {
 	background-color: var(--bg);
 	width: 100%;
@@ -201,7 +198,7 @@ footer a {
 	padding: 1rem;
 	margin: auto;
 	color: var(--font);
-	background: var(--bg5);
+	background: var(--accent3);
 }
 
 .navBar_2 a:hover {
@@ -332,6 +329,8 @@ footer a {
 	font-size: 2vw;
 	color: var(--bg);
 	background: var(--accent2);
+	margin-top: 0;
+	top: 0;
 	border-radius: 10em;
 	padding: 1vw 2vw;
 }
