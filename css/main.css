@@ -35,7 +35,7 @@ body {
 	color: var(--font);
 	font-family: 'GothamLight', sans-serif;
 	font-size: 1.2vw;
-	animation: Start 0.8s linear forwards;
+	animation: Start 0.3s linear forwards;
 }
 
 a {
@@ -316,8 +316,9 @@ footer a {
 	text-align: left;
 }
 
-.textimg img{
+.textimg img, iframe{
 	margin-right: 5vw;
+	width: 30%;
 }
 
 .highlight {
