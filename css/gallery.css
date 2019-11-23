@@ -1,6 +1,14 @@
 * {
     box-sizing: border-box;
 }
+
+footer {
+    box-sizing: initial !important;
+}
+
+.content {
+    padding: 0 !important;
+}
   
 .header {
     text-align: center;
