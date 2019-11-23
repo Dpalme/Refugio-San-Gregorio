@@ -88,6 +88,7 @@ h5 {
 	margin: auto;
 	width: 80%;
 	margin-bottom: 1vw;
+	font-weight: 100;
 }
 
 input {
@@ -103,8 +104,10 @@ a:hover {
 }
 
 footer {
+	box-shadow: 0vw 1vw var(--font);
 	width: 80%;
 	padding: 5%;
+	margin-bottom: 3vw;
 	background: var(--bg2);
 	margin: auto;
 	color: var(--font);
@@ -396,6 +399,10 @@ footer a {
 	h3 {
 		font-size: 1.2rem;
 		padding: 2vw 0;
+	}
+
+	h4 {
+		font-size: 2rem;
 	}
 
 	h5 {
