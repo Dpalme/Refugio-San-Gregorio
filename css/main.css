@@ -55,14 +55,14 @@ h1 {
 	-moz-background-clip: text;
 	background-clip: text;
 	color: transparent;
-	font-size: 3vw;
+	font-size: 4rem;
 	margin-left: 5vw;
 	margin-top: 0.2vw;
 	margin-bottom: 0.2vw;
 }
 
 h2 {
-	font-size: 2.5vw;
+	font-size: 3rem;
 	margin-left: 5vw;
 	margin-top: 0.2vw;
 	margin-bottom: 0.2vw;
@@ -70,7 +70,7 @@ h2 {
 }
 
 h3 {
-	font-size: 2vw;
+	font-size: 3rem;
 	margin-left: 5vw;
 	margin-top: 2vw;
 	margin-bottom: 2vw;
@@ -103,9 +103,9 @@ a:hover {
 }
 
 footer {
-	width: 90%;
-	padding: 3vw 0;
-	background: var(--bg5);
+	width: 80%;
+	padding: 5%;
+	background: var(--bg2);
 	margin: auto;
 	color: var(--font);
 }
@@ -258,30 +258,6 @@ footer a {
 	box-shadow: 0 0.1rem var(--bg3);
 }
 
-.footer {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: 0;
-	width: 100%;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-}
-
-.footer_col {
-	-webkit-box-flex: 0;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	top: 20%;
-	margin: auto;
-	flex: 0 0 50%;
-	max-width: 50%;
-	justify-content: center;
-	text-align: center;
-}
-
 .underline {
 	position: relative;
 	background: var(--accent2);
@@ -326,21 +302,21 @@ footer a {
 }
 
 .PayPal {
-	margin: auto;
-	font-size: 2vw;
+	position: relative;
+	font-size: 2rem;
 	color: var(--bg);
 	background: var(--accent2);
-	margin-top: 0;
-	top: 0;
 	border-radius: 10em;
 	padding: 1vw 2vw;
+	width: 10rem;
+	margin: auto;
+	left:0;
 }
 
 .full_flex {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	margin: auto;
 	align-items: center;
 	justify-items: center;
 	text-align: center;
@@ -352,6 +328,16 @@ footer a {
 	margin: auto;
 	width: 100%;
 	text-align: center;
+	left: 50%;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+}
+
+.full_flex_col h5{
+	padding: 2vw;	
+	top: 0;
+	margin: auto;
 }
 
 .half_flex {
@@ -373,8 +359,17 @@ footer a {
 .flex_element {
 	margin: auto;
 	margin-bottom: 1vw;
-	max-width: 50%;
-	width: 33%;
+	width: 100%;
+}
+
+.socials {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	font-size: 3rem;
 }
 
 
@@ -387,9 +382,37 @@ footer a {
 /* Mobile */
 
 @media screen and (max-width: 1200px) {
+
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	h2 {
+		font-size: 3rem;
+		padding: 2vw 0;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+		padding: 2vw 0;
+	}
+
+	h5 {
+		font-size: 1rem;
+	}
+	
+	.PayPal {
+		font-size: 1.3rem;
+		padding: 4vw;
+		width: 50%;
+		margin: auto;
+		left:0;
+	}
+
 	.Logo {
 		text-align: center;
-		font-size: 8vw;
+		font-size: 5rem;
 		width: 100%;
 		margin: auto;
 	}
@@ -425,21 +448,71 @@ footer a {
 	}
 
 	.navBar_2 {
+		width: 90%;
+		color: var(--font);
+		background: var(--accent3);
 		margin: auto;
-		font-size: 1.2vw;
+		font-size: 1rem;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+
+	.navBar_2 a{
+		width: 90%;
+		background: var(--accent3);
+		user-select: all;
+		font-size: 1.2rem;
 	}
 
 	a {
 		font-weight: bolder;
+		font-size: 1.5rem;
 	}
 
 	.footer {
 		flex-direction: column;
-		font-size: 3vw;
+		font-size: 1.5rem;
+	}
+
+	.footer a {
+		padding: 2vw 0;
+		font-size: 1.5rem;
 	}
 	
 	.footer_col {
 		font-size: 2vw;
+	}
+
+	.textimg {
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.textimg img {
+		width: 90%;
+	}
+
+	.textimg p {
+		font-size: 5vw;
+	}
+
+	.full_flex {
+		flex-direction: column;
+	}
+
+	.full_flex_col h5{
+		top: auto;
+	}
+
+	.half_flex {
+		padding: 2vw;
+	}
+
+	.flex_element {
+		position: relative;
+		padding: 1vw 0vw !important;
+		width: 100%;
 	}
 }
 
