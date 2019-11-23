@@ -17,6 +17,7 @@
 :root {
 	--bg: #fff;
 	--bg2: #eaeaea;
+	--bg3: #bbb;
 	--font: #000;
 	--accent: #838C77;
 	--accent2: #263382;
@@ -107,7 +108,7 @@ footer {
 	width: 80%;
 	padding: 5%;
 	margin-bottom: 3vw;
-	background: var(--bg2);
+	background: var(--bg3);
 	margin: auto;
 	color: var(--font);
 }
@@ -391,7 +392,7 @@ footer a {
 	}
 
 	h2 {
-		font-size: 3rem;
+		font-size: 2.4rem;
 		padding: 2vw 0;
 	}
 
@@ -501,6 +502,7 @@ footer a {
 
 	.textimg p {
 		font-size: 5vw;
+		padding: 5vw;
 	}
 
 	.full_flex {
