@@ -6,17 +6,28 @@
 		<title>Refugio San Gregorio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js	"></script>
-		<script> 
-		$(function(){
-		$("#include_header").load("header.html"); 
-		$("#include_footer").load("footer.html"); 
-		});
-		</script>
-	</head>
-
 	<body>
-		<nav id="include_header"></nav>
+		<nav>
+			<div class="navBar">
+				<img src="img/Perro-Logo.svg">
+				<div class="dropdown" style="margin: auto;">
+					<h1 class="Logo"> Refugio</h1>
+					<h1 class="Logo_bottom">San Gregorio</h1>
+				</div>
+				
+				<div class="full_flex_col">
+					<h5 class="highlight">Rescate, cuidado y rehabilitación de perros callejeros y maltratados.</h5>
+					<h5 class="highlight">Ajusco, Tlalpan</h5>
+				</div>
+			</div>
+			<div class="navBar_2">
+				<a class="selected" href="index.html">INICIO</a>
+				<a href="Nosotros.html">NOSTOROS</a>
+				<a href="Ayudar.html">AYUDAR</a>
+				<a href="Galeria.html">GALERIA</a>
+				<a href="Contacto.html">CONTACTO</a>
+			</div>
+		</nav>
 
 		<div class="content">
 			<h2>Sobre nosotros<div class="underline"></div> </h2>
@@ -63,6 +74,25 @@
 			</div>
 		</div>
 		
-		<footer id="include_footer"></footer>
+		<footer>
+			<div class="full_flex">
+				<h4 style="margin: auto; margin-bottom: 2vw; color: var(--font)">ENLACES</h4>
+				<h4 style="margin: auto; margin-bottom: 2vw; color: var(--font)">REDES SOCIALES</h4>
+			</div>
+			<div class="full_flex">
+				<div class="full_flex_col">
+					<a class="flex_element" href="index.html">Inicio</a>
+					<a class="flex_element" href="Nosotros.html">Sobre Nosotros</a>
+					<a class="flex_element" href="Ayudar.html">Ayuda</a>
+					<a class="flex_element" href="Galeria.html">Galeria</a>
+					<a class="flex_element" href="Contacto.html">Contacto</a>
+				</div>
+				<div class="full_flex_col">
+					<a class="flex_element" href="https://www.facebook.com/PensionCaninaSanGregorio/">Facebook</a>
+					<a class="flex_element" href="https://www.instagram.com/refugio_san_gregorio/">Instagram</a>
+					<a class="flex_element" href="https://twitter.com/gregoriorefugio">Twitter</a>
+				</div>					
+			</div>
+		</footer>
 	</body>
 </html>
