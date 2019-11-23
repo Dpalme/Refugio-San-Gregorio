@@ -4,31 +4,18 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Ayudar</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js	"></script>
+		<script> 
+		$(function(){
+		$("#include_header").load("header.html"); 
+		$("#include_footer").load("footer.html"); 
+		});
+		</script>
 	</head>
 
 	<body>
-        <nav>
-            <div class="navBar">
-                <img src="img/Perro-Logo.svg">
-                <div style="margin: auto;">
-                    <h1 class="Logo"> Refugio</h1>
-                    <h1 class="Logo_bottom">San Gregorio</h1>
-                </div>
-                
-                <div style="display: flex; flex-direction: column;">
-                    <h5 class="highlight">Rescate, cuidado y rehabilitación de perros callejeros y maltratados.</h5>
-                    <h5 class="highlight">Ajusco, Tlalpan</h5>
-                </div>
-            </div>
-            <div class="navBar_2">
-                <a href="index.html">INICIO</a>
-                <a href="Nosotros.html">NOSTOROS</a>
-                <a class="selected" href="Ayudar.html">AYUDAR</a>
-                <a href="Galeria.html">GALERIA</a>
-                <a href="Contacto.html">CONTACTO</a>
-            </div>
-        </nav>
+        <nav id="include_header"></nav>
 
         <div class="content">
             <h2 style="margin-bottom: 2vw; margin-top: 5vw;">¿Cómo ayudar?</h2>
@@ -66,23 +53,6 @@
 
     
 
-        <footer>
-            <div class="footer">
-                <div class="footer_col">
-                    <h4 style="margin: auto; margin-bottom: 2vw; color: #fff8">ENLACES</h4>
-                    <a style="margin: auto; margin-bottom: 1vw;" href="index.html">Inicio</a>
-                    <a style="margin: auto; margin-bottom: 1vw;" href="Nosotros.html">Sobre Nosotros</a>
-                    <a style="margin: auto; margin-bottom: 1vw;" href="Ayudar.html">Ayuda</a>
-                    <a style="margin: auto; margin-bottom: 1vw;" href="Galeria.html">Galeria</a>
-                    <a style="margin: auto; margin-bottom: 1vw;" href="Contacto.html">Contacto</a>
-                </div>
-                <div class="footer_col">
-                    <h4 style="margin: auto; margin-bottom: 2vw; color: #fff8">REDES SOCIALES</h4>
-                    <a style="margin: auto; margin-bottom: 1vw;" href="https://www.facebook.com/PensionCaninaSanGregorio/">Facebook</a>
-                    <a style="margin: auto; margin-bottom: 1vw;" href="https://www.instagram.com/refugio_san_gregorio/">Instagram</a>
-                    <a style="margin: auto; margin-bottom: 1vw;" href="https://twitter.com/gregoriorefugio">Twitter</a>
-                </div>
-            </div>
-        </footer>
+        <footer id="include_footer"></footer>
     </body>
 </html>
