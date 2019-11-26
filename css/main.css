@@ -182,6 +182,7 @@ footer a {
 
 .navBar img {
 	margin-right: 2vw;
+	width: 40%;
 }
 
 .navBar h5 {
@@ -440,7 +441,7 @@ footer a {
 	}
 
 	.navBar img {
-		width: 40vw;
+		width: 50%;
 		margin: auto;
 		transform: translate(3%, 0);
 	}
