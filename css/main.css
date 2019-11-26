@@ -9,9 +9,9 @@
 }
 @font-face {
 	font-family: 'GothamLight';
-	src: url('../fonts/gotham/GothamLight.woff2') format('woff2'),
-		/* Super Modern Browsers */ url('../fonts/gotham/GothamLight.woff') format('woff'),
-		/* Pretty Modern Browsers */ url('../fonts/gotham/GothamLight.ttf') format('truetype'); /* Safari, Android, iOS */
+	src: url('../fonts/gotham/Gotham-Light.woff2') format('woff2'),
+		/* Super Modern Browsers */ url('../fonts/gotham/Gotham-Light.woff') format('woff'),
+		/* Pretty Modern Browsers */ url('../fonts/gotham/Gotham-Light.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 /* Global Variables */
