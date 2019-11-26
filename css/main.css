@@ -470,6 +470,7 @@ footer a {
 		background: var(--accent3);
 		user-select: all;
 		font-size: 1.2rem;
+		height: 5vw;
 	}
 
 	a {
