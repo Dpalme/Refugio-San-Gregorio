@@ -1,0 +1,10 @@
+:root {
+	/* Colors */
+	--logo-main: #263382;
+	--logo-sec: #74593B;
+}
+
+.logo-main 									{ color: var(--logo-main); }
+.logo-main-bg 							{ background-color: var(--logo-main); }
+.logo-sec 									{ color: var(--logo-sec); }
+.logo-sec-bg 								{ background-color: var(--logo-sec); }
