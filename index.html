@@ -28,14 +28,10 @@
     <header class="half-gutter-padding-vertical fixed front top white-bg full column display-none">
         <div class="container relative margin-none margin-auto-sides">
             <a class="ten columns margin-none flex-wrap" href="#Inicio">
-                <img src="img/Perro-Logo.svg" class="col-height half-width" />
-                <div class="half-width">
-                    <h4 class="inline logo-main margin-none">Refugio </h4>
-                    <p class="block logo-sec margin-none">San Gregorio</p>
-                </div>
+                <img src="img/icon.png" class="col-height" />
             </a>
 
-            <div class="hamburger one column half-gutter-padding"
+            <div class="hamburger absolute right half-gutter-padding"
                 onclick="document.querySelector('ul').classList.toggle('open');">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -88,40 +84,37 @@
     <div class="fullscreen">
         <a name="Inicio"></a>
         <img class="fullscreen image-cover absolute" src="img/landing-bg.jpg" />
-        <div class="fullscreen dark-blue-bg absolute" style="opacity: .3;"></div>
-        <div class="absolute-center container">
-            <div class="half column margin-none">
-                <h1 class="full column margin-none logo-main">Refugio</h1>
-                <h1 class="full column margin-none mid-gray">San Gregorio</h1>
-                <h2 class="full column margin-none white">Ajusco, Tlalpan</h2>
-            </div>
-            <div class="half column mid-white text-center gutter-margin-top">
-                <a class="header-link important-link" href="#Nosotros">Nosotros</a>
-                <a class="header-link important-link" href="#Donaciones">Donaciones</a>
-                <a class="header-link important-link" href="#Galeria">Galeria</a>
-                <a class="header-link important-link" href="#Contacto">Contacto</a>
+        <div class="fullscreen white-bg absolute" style="opacity: .5;"></div>
+        <div class="absolute full column text-center">
+            <img src="img/Logo Completo.png" class="quarter-width col-margin-top">
+            <div class="container">
+                <div class="full column dark-blue text-center gutter-margin-top">
+                    <a class="three columns important-link dark-blue gutter-margin-bottom" href="#Nosotros">Nosotros</a>
+                    <a class="three columns important-link dark-blue gutter-margin-bottom" href="#Donaciones">Donaciones</a>
+                    <a class="three columns important-link dark-blue gutter-margin-bottom" href="#Galeria">Galeria</a>
+                    <a class="three columns important-link dark-blue" href="#Contacto">Contacto</a>
+                </div>
             </div>
         </div>
+       
     </div>
 
     <a name="Nosotros"></a>
     <div class="container top-margin">
         <div class="six columns margin-none">
             <div class="card rounded">
-                <h3 class="twelve columns col-margin-bottom">Nosotros</h3>
+                <h3 class="twelve columns gutter-margin-bottom">Nosotros</h3>
                 <p class="twelve columns gutter-margin-bottom">
                     • Somos un refugio que sobrevive de donativos y ayuda de almas caritativas para alimentar más de 200
-                    perritos abandonados.
+                    perritos rescatados.
                 </p>
                 <p class="twelve columns gutter-margin-bottom">
                     • Amplios jardines, paseos, recesos, atención individualizada, cariño y supervisión continua para tu
-                    mejor
-                    amigo.
+                    todos ellos.
                 </p>
                 <p class="twelve columns gutter-margin-bottom">
                     • Al momento tenemos más de 200 perros dentro de nuestras instalaciones y cuidamos de perros
-                    callejeros
-                    que habitan en los alrededores del refugio.
+                    callejeros que habitan en los alrededores del refugio.
                 </p>
             </div>
         </div>
@@ -132,14 +125,14 @@
 
     <a name="Donaciones"></a>
     <div class="container top-margin">
-        <div class="six columns margin-none col-margin-bottom">
+        <div class="full column col-margin-bottom">
             <h3 class="gutter-margin-bottom">Donaciones</h3>
             <h4 class="gutter-margin-bottom">¿Cómo ayudar?</h4>
             <p class="half-gutter-margin-bottom">En tan sólo la Ciudad de México hay millones de
                 perros sin casa o que
                 sufren de abuso animal. Sabemos que no podemos solucionar solos este problema, pero estamos confiados
                 que
-                con su ayuda podemos combatirlo un poco. </p>
+                con su ayuda podemos mejorar la calidad de vida de muchos de ellos. </p>
             <p class="half-gutter-margin-bottom">Para esto, necesitamos de su apoyo. Además de una población constante
                 de peluditos mayor a los 200, salimos
                 a repartir alimento a los perros callejeros de la zona. Esto significa que, en promedio, ocupamos 100kg
@@ -147,19 +140,19 @@
                 comida al día para alimentarlos. Todos los donativos monetarios se invierten en ellos. Igualmente los
                 donativos en especie son más que bienvenidos.</p>
         </div>
-        <div class="six columns card rounded">
+        <div class="ten columns one-offset card rounded">
             <h4 class="twelve columns gutter-margin-bottom text-center">Donativos</h4>
-            <div class="half column margin-none text-center">
-                <h4 class="blue">BANAMEX. OXXO</h4>
+            <div class="half column margin-none text-center half-col-margin-bottom">
+                <h4 class="blue gutter-margin-bottom">BANAMEX. OXXO</h4>
                 <p>4766 8412 6025 2799</p>
                 <p>4766 8415 8078 5098</p>
             </div>
             <div class="half column text-center">
-                <h4 class="blue">BANORTE</h4>
+                <h4 class="blue gutter-margin-bottom">BANORTE</h4>
                 <p>4915 6630 5302 4965</p>
             </div>
-            <a href="http://www.paypal.me/refugiosangregorio"
-                class="button four columns four-offset col-margin-top half-gutter-padding-vertical">Paypal</a>
+            <a href="http://www.paypal.me/refugiosangregorio" target="_blank"
+                class="button four columns four-offset gutter-margin-top half-gutter-padding-vertical">Paypal</a>
         </div>
     </div>
 
@@ -199,26 +192,41 @@
     <!Contacto />
     <a name="Contacto"></a>
     <div class="container col-padding-vertical">
-        <h3 class="twelve columns gutter-margin-bottom">Contacto</h3>
-        <div class="three columns margin-none text-center gutter-margin-bottom">
-            <h4 class="twelve columns">WhatsApp</h4>
-            <div class="eight columns two-offset margin-none half-gutter-margin-vertical">
-                <a class="block button-text" href="https://api.whatsapp.com/send?phone=+5215539990498" target="_blank">
-                    <div class="button button-text">+52 1 55 3999 0498</div>
+        <h3 class="full column gutter-margin-bottom">Contacto</h3>
+        <div class="full column">
+            <div class="half column text-center gutter-margin-vertical">
+                <a class="three columns half-gutter-margin-bottom" href="https://www.facebook.com/RefugioSanGregorio/" target="_blank">
+                    <svg height="64" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5 5.5V3.5C5 2.948 5.448 2.5 6 2.5H7V0H5C3.343 0 2 1.343 2 3V5.5H0V8H2V16H5V8H7L8 5.5H5Z"
+                            fill="var(--logo-main)" />
+                    </svg>
+                </a>
+                <a class="three columns half-gutter-margin-bottom" target="_blank" href="https://twitter.com/GregorioRefugio">
+                    <svg height="64" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 1.87231C15.405 2.13331 14.771 2.30631 14.11 2.39031C14.79 1.98431 15.309 1.34631 15.553 0.577313C14.919 0.955313 14.219 1.22231 13.473 1.37131C12.871 0.730313 12.013 0.333313 11.077 0.333313C9.261 0.333313 7.799 1.80731 7.799 3.61431C7.799 3.87431 7.821 4.12431 7.875 4.36231C5.148 4.22931 2.735 2.92231 1.114 0.931313C0.831 1.42231 0.665 1.98431 0.665 2.58931C0.665 3.72531 1.25 4.73231 2.122 5.31531C1.595 5.30531 1.078 5.15231 0.64 4.91131C0.64 4.92131 0.64 4.93431 0.64 4.94731C0.64 6.54131 1.777 7.86531 3.268 8.17031C3.001 8.24331 2.71 8.27831 2.408 8.27831C2.198 8.27831 1.986 8.26631 1.787 8.22231C2.212 9.52131 3.418 10.4763 4.852 10.5073C3.736 11.3803 2.319 11.9063 0.785 11.9063C0.516 11.9063 0.258 11.8943 0 11.8613C1.453 12.7983 3.175 13.3333 5.032 13.3333C11.068 13.3333 14.368 8.33331 14.368 3.99931C14.368 3.85431 14.363 3.71431 14.356 3.57531C15.007 3.11331 15.554 2.53631 16 1.87231Z"
+                            fill="var(--logo-main)" />
+                    </svg>
+                </a>
+                <a class="three columns half-gutter-margin-bottom" target="_blank" href="https://www.instagram.com/refugio_san_gregorio/">
+                    <svg height="64" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5 0H11C13.761 0 16 2.239 16 5V11C16 13.761 13.761 16 11 16H5C2.239 16 0 13.761 0 11V5C0 2.239 2.239 0 5 0ZM11 14.5C12.93 14.5 14.5 12.93 14.5 11V5C14.5 3.07 12.93 1.5 11 1.5H5C3.07 1.5 1.5 3.07 1.5 5V11C1.5 12.93 3.07 14.5 5 14.5H11ZM4 8C4 5.791 5.791 4 8 4C10.209 4 12 5.791 12 8C12 10.209 10.209 12 8 12C5.791 12 4 10.209 4 8ZM5.5 8C5.5 9.378 6.622 10.5 8 10.5C9.378 10.5 10.5 9.378 10.5 8C10.5 6.621 9.378 5.5 8 5.5C6.622 5.5 5.5 6.621 5.5 8ZM12.833 3.7C12.833 3.99437 12.5944 4.233 12.3 4.233C12.0057 4.233 11.767 3.99437 11.767 3.7C11.767 3.40564 12.0057 3.167 12.3 3.167C12.5944 3.167 12.833 3.40564 12.833 3.7Z"
+                            fill="var(--logo-main)" />
+                    </svg>
+                </a>
+                <a class="three columns half-gutter-margin-bottom" href="https://api.whatsapp.com/send?phone=+5215539990498" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 16 16.1">
+                        <path d="M8,0A8,8,0,0,0,0,8a7.7,7.7,0,0,0,1.1,4h0L0,16.1,4.2,15h0A8,8,0,0,0,8,16,8,8,0,0,0,8,0ZM8,14.6a7.2,7.2,0,0,1-3.6-1l-2.5.6.7-2.4A6.2,6.2,0,0,1,1.4,8,6.7,6.7,0,0,1,8,1.4,6.7,6.7,0,0,1,14.6,8,6.7,6.7,0,0,1,8,14.6Z" style="fill:var(--logo-main)"/>
+                        <path d="M6.7,6.4,6,7.4A4.2,4.2,0,0,0,7.1,8.9a11.1,11.1,0,0,0,2,1.1L10,9l1.1.4.9.5a1.5,1.5,0,0,1-.2,1.2,2,2,0,0,1-1.6.7,5.2,5.2,0,0,1-2.9-1A9.2,9.2,0,0,1,4.7,8.2,3.1,3.1,0,0,1,4,5.9c.1-.7.8-1.7,1.3-1.6s.5,0,.8.5S6.7,6.4,6.7,6.4Z" style="fill:var(--logo-main)"/>
+                    </svg>
                 </a>
             </div>
-        </div>
-        <div class="three columns margin-none text-center gutter-margin-bottom">
-            <h4 class="twelve columns">Facebook</h4>
-            <div class="eight columns two-offset margin-none half-gutter-margin-vertical">
-                <a class="block button-text" href="https://www.facebook.com/RefugioSanGregorio/" target="_blank">
-                    <div class="button button-text">¡Visítanos!</div>
-                </a>
+            <div class="half column text-center">
+                <h4 class="twelve columns gutter-margin-bottom">Ubicación</h4>
+                <p>Carretera Picacho Ajusco, Col. Lomas de Tepemecatl, Del. Tlalpan, México D.F.</p>
             </div>
-        </div>
-        <div class="six columns margin-none text-center gutter-margin-bottom">
-            <h4 class="twelve columns gutter-margin-bottom">Ubicación</h4>
-            <p>Carretera Picacho Ajusco, Col. Lomas de Tepemecatl, Del. Tlalpan, México D.F.</p>
         </div>
     </div>
 
@@ -234,7 +242,7 @@
                     <a class="four columns" href="#Nosotros">Nosotros</a>
                     <a class="four columns" href="#Donaciones">Donaciones</a>
                 </div>
-                <p class="four columns">©2020 Refugio San Gregorio</p>
+                <p class="small-body white four columns">©2020 Refugio San Gregorio</p>
                 <div class="four columns">
                     <a class="four columns half-gutter-margin-bottom" href="https://www.facebook.com/RefugioSanGregorio/" target="_blank">
                         <svg height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">

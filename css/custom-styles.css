@@ -1,10 +1,33 @@
 :root {
 	/* Colors */
-	--logo-main: #263382;
-	--logo-sec: #74593B;
+	--logo-main: #083591;
+	--logo-sec: #A67C52;
+	font-size: 12px;
 }
 
-.logo-main 									{ color: var(--logo-main); }
+.logo-main 								{ color: var(--logo-main); }
 .logo-main-bg 							{ background-color: var(--logo-main); }
-.logo-sec 									{ color: var(--logo-sec); }
-.logo-sec-bg 								{ background-color: var(--logo-sec); }
+.logo-sec 								{ color: var(--logo-sec); }
+.logo-sec-bg 							{ background-color: var(--logo-sec); }
+
+h3 {
+	font-size: 3em;
+	color: #1E2D45;
+}
+
+p{
+	font-size: 2em;
+	color: #A67C52;
+	line-height: 150%;
+}
+
+.header-link {
+	margin: none;
+	width: 20%;
+}
+
+p .small-body {
+	font-size: 2em !important;
+	color: #A67C52;
+	line-height: 150%;
+}
