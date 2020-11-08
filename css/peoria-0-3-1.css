@@ -55,11 +55,14 @@
 	--green: #004F3A;
 	--green-secondary: #104f3e;
 	--green-third: #27493f;
+	--accent-blue: #083591;
+	--brown3: #A67C52;
+	--brown2: #74593B; 
 
 	/* Fonts
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
 	--font-face: 'Montserrat', Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 
 	/* Grid values
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -101,11 +104,9 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"]{
-	background-color: var(--white);
-	color: var(--black);
-	border: 1px var(--black) solid;
-	border-radius: 3px;
-	padding: 5px;
+	color: var(--white);
+	border: none;
+	border-radius: 5px;
 	cursor: pointer;
 	text-align: center;
 	outline: none; }
@@ -117,32 +118,31 @@ footer div a:visited 	{ color: var(--white);        }
 /* Font Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .super-title, .main-title,
-.links, .button-text, 
 h1, h3 {
 	font-style: normal;
-	font-weight: 700; }
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 6rem; }
 h2, h4, 
 .super-secondary-title,
 .secondary-title {
 	font-style: normal;
-	font-weight: 500; 
+	font-weight: 300;
 }
-.body-text,
-.secondary-body,
-.small-body,
-p,
-b {
+.body-text, .secondary-body,
+.small-body,.links, .button-text,
+p, b {
 	font-style: normal;
 	font-weight: 300; }
 .super-title,
 h1 {
 	display: inline;
-	font-size: 3rem;
-	line-height: 4rem;}
+	font-size: 4rem;
+	line-height: 6rem;}
 .super-secondary-title,
 h2 {
-	font-size: 2.5rem;
-	line-height: 3rem;}
+	font-size: 3rem;
+	line-height: 6rem;}
 .main-title,
 h3 {
 	font-size: 2rem;
@@ -156,13 +156,12 @@ p, body {
 	font-size: 1rem;
 	line-height: 1.5rem}
 .small-body {
-	font-size: .75rem;
+	font-size: .85rem;
 	line-height: 1rem; }
 a,
 a:visited,
 a:active,
 .links {
-	color: inherit;
 	font-weight: 400;
 	font-size: 1.25rem;
 	line-height: 1.5rem;
@@ -173,19 +172,24 @@ a:active,
 .important-link:active,
 .important-link:focus {
 	color: inherit;
-	font-weight: 500;
-	font-size: 3rem;
-	line-height: 4rem; }
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 1.16666666667rem;
+	line-height: 1.16666666667rem; }
 .button-text {
-	font-weight: 500;
-	font-size: 0.8333rem;
-	line-height: 2.5rem;
-	letter-spacing: 5%; }
+	font-size: 2rem;
+	text-transform: uppercase;
+	line-height: 6rem; }
+.justify {
+	text-align: justify;
+	text-align-last: left;
+	text-justify: newspaper; }
 b 								{ color: var(--black);        			}
 .bold 							{ font-weight: bold;          			}
 .text-right 					{ text-align: right;        			}
 .text-left 						{ text-align: left;           			}
 .text-center 					{ text-align: center;         			}
+.lh-1 					        { line-height: 2rem;         			}
 
 /* Selection
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -232,6 +236,8 @@ b 								{ color: var(--black);        			}
 	position: relative;
 	top: 0;
 	height: 50vh; }
+.float-right 					{ float: right !important;    }
+.float-left 					{ float: left !important;     }
 .image-cover 					{ object-fit: cover;          }
 .background-cover           	{ background-size: cover;     }
 .relative 						{ position: relative;         }
@@ -389,7 +395,7 @@ label > .label-body {
 .container.top-margin {
   position: relative;
   width: 90%;
-  max-width: 1100px;
+  max-width: 1140px;
   margin: 0 auto;
 	padding-left: 5%;
   padding-right: 5%;}
@@ -707,6 +713,12 @@ label > .label-body {
 .green-secondary-bg 			{ background: var(--green-secondary)}
 .green-third 					{ color: var(--green-third);   }
 .green-third-bg 				{ background: var(--green-third)}
+.accent-blue 					{ color: var(--accent-blue);   }
+.accent-blue-bg 				{ background: var(--accent-blue)}
+.brown3 					{ color: var(--brown3);   }
+.brown3-bg 				{ background: var(--brown3)}
+.brown2 					{ color: var(--brown2);   }
+.brown2-bg 				{ background: var(--brown2)}
 
 
 /* Media Queries
@@ -720,7 +732,7 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {
+@media (orientation: portrait) {
 	.tablet-hide { display: none; }
 
 	.mobile-hide { display: none; }

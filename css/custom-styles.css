@@ -2,7 +2,6 @@
 	/* Colors */
 	--logo-main: #083591;
 	--logo-sec: #A67C52;
-	font-size: 12px;
 }
 
 .logo-main 								{ color: var(--logo-main); }
@@ -10,24 +9,45 @@
 .logo-sec 								{ color: var(--logo-sec); }
 .logo-sec-bg 							{ background-color: var(--logo-sec); }
 
-h3 {
-	font-size: 3em;
-	color: #1E2D45;
-}
-
 p{
 	font-size: 2em;
 	color: #A67C52;
 	line-height: 150%;
 }
 
-.header-link {
-	margin: none;
-	width: 20%;
-}
-
 p .small-body {
 	font-size: 2em !important;
 	color: #A67C52;
 	line-height: 150%;
+}
+
+.line {
+	background-color: white;
+}
+
+.adoptar-1 {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 2rem;
+	text-transform: uppercase;
+}
+
+.adoptar-2 {
+	font-weight: 400;
+	font-size: .8rem;
+	line-height: 2rem;
+	text-transform: uppercase;
+}
+
+.card-link, .card-link:hover, .card-link:active {
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 2rem;
+}
+
+.button-text:active {
+	font-size: 2rem;
+	line-height: 6rem;
+	font-weight: 300;
+	text-decoration: underline;
 }
