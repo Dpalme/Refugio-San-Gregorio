@@ -11,18 +11,18 @@
 
 p{
 	font-size: 2em;
-	color: #A67C52;
+	color: var(--brown3);
 	line-height: 150%;
 }
 
-p .small-body {
-	font-size: 2em !important;
-	color: #A67C52;
+p.small-body {
+	font-size: 1.8rem;
+	color: var(--brown3);
 	line-height: 150%;
 }
 
 .line {
-	background-color: white;
+	background-color: var(--white);
 }
 
 .adoptar-1 {
