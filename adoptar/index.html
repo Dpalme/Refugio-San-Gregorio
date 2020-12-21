@@ -34,6 +34,18 @@
     <script src='https://dpalmer.in/Peoria/peoria.js'></script>
     <script src='./js/perritos.js'></script>
     <script src='./js/main.js'></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4050GYQB1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B4050GYQB1');
+    </script>
 </head>
 
 <body onload="start()">
@@ -43,7 +55,8 @@
                 <img src="../img/Logotipo Neg.png" class="gutter-height" />
             </a>
 
-            <div class="hamburger absolute right half-gutter-margin-right" onclick="document.querySelector('ul').classList.toggle('open');">
+            <div class="hamburger absolute right half-gutter-margin-right"
+                onclick="document.querySelector('ul').classList.toggle('open');">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
