@@ -62,14 +62,14 @@
 </head>
 
 <body>
-    <header class="half-gutter-padding-vertical fixed front top dark-blue-bg full column display-none">
+    <header class="gutter-padding-vertical fixed front top dark-blue-bg full column display-none">
         <div class="container relative margin-none margin-auto-sides">
             <a class="ten columns margin-none flex-wrap" href="#Inicio">
-                <img src="./img/Logotipo Neg.png" class="gutter-height" />
+                <img src="./img/Logotipo Neg.png" class="col-height" />
             </a>
 
-            <div class="hamburger absolute right half-gutter-margin-right"
-                onclick="document.querySelector('ul').classList.toggle('open');">
+            <div class="hamburger absolute right bottom half-gutter-margin-right"
+                onclick="javascript:document.querySelector('ul').classList.toggle('open');">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
@@ -120,100 +120,101 @@
     <!Inicio />
     <div class="fullscreen">
         <a name="Inicio"></a>
-        <img class="half-width full-height image-cover mobile-hide" src="img/img22.jpg" />
-        <div class="vertical-center six columns right text-center">
-            <img src="img/Logo Completo.png" class="eight columns two-offset col-margin-top">
+        <img class="half-width full-height image-cover mobile-hide"
+            src="img/img22.jpg" />
+        <div class="vertical-center six columns right text-center gutter-padding-sides">
+            <img src="img/icon.png" class="eight columns two-offset col-margin-top">
+            <h1 class="accent-blue lh-1">Refugio<br><span class="logo-sec main-title">San Gregorio</span></h1>
             <div class="full column dark-blue text-center col-margin-top">
                 <a class="four columns important-link dark-blue gutter-margin-bottom" href="#Nosotros">Nosotros</a>
                 <a class="four columns important-link dark-blue gutter-margin-bottom" href="#Adoptar">Adoptar</a>
                 <a class="four columns important-link dark-blue" href="#Donar">Donar</a>
             </div>
         </div>
-
     </div>
+
+    <section>
+        <a href="#Donar" class="six columns two-offset col-padding-vertical">
+            <img src="img/f7b2f067-ec5d-4b67-b368-a494bcb5c466.jpg" class="u-full-width image-contain" alt="Dona">
+        </a>
+    </section>
 
     <a name="Nosotros"></a>
     <div class="container top-margin">
-        <div class="four columns margin-none">
-            <h1 class="accent-blue twelve columns gutter-margin-bottom">Nosotros</h1>
-            <p class="twelve columns gutter-margin-bottom justify">
-                • Somos un refugio que sobrevive de donativos y ayuda de almas caritativas.
-            </p>
-            <p class="twelve columns gutter-margin-bottom justify">
-                • Amplios jardines, paseos, atención individualizada, cariño y supervisión continua para tu todos ellos.
-            </p>
-            <p class="twelve columns gutter-margin-bottom justify">
-                • Cuidamos a más de 200 perros y constantemente rescatamos a más.
-            </p>
+        <div class="six columns margin-none">
+            <h2 class="accent-blue block gutter-margin-bottom">Nosotros</h2>
+            <ul>
+                <li>Somos un refugio que sobrevive de donativos y ayuda de almas caritativas.</li>
+                <li>Amplios jardines, paseos, atención individualizada, cariño y supervisión continua para tu todos ellos.</li>
+                <li>Cuidamos a más de 200 perros y constantemente rescatamos a más.</li>
+            </ul>
         </div>
         <div class="six columns float-right">
             <img class="full column" src="img/img20.jpg" />
         </div>
     </div>
 
-
-
     <a name="Adoptar"></a>
     <div class="container top-margin">
-        <h1 class="twelve columns col-margin-bottom accent-blue">Adoptar</h1>
+        <h2 class="twelve columns margin-none accent-blue">Adoptar</h2>
 
-        <div class="full column">
+        <div class="full column col-margin-bottom">
             <div class="four columns">
-                <h2 class="gutter-margin-bottom accent-blue">Requisitos</h2>
-                <p>1. Cama para el perro<br>
-                    2. Collar<br>
-                    3. Cadena para paseo<br>
-                    4. Platos para agua y comida<br>
-                    5. Placa con nombre del perro y datos del adoptante
-                </p>
+                <h3 class="gutter-margin-bottom accent-blue">Requisitos</h3>
+                <ol>
+                    <li>Cama para el perro</li>
+                    <li>Collar</li>
+                    <li>Cadena para paseo</li>
+                    <li>Platos para agua y comida</li>
+                    <li>Placa con nombre del perro y datos del adoptante</li>
+                </ol>
             </div>
 
             <div class="four columns">
-                <h2 class="gutter-margin-bottom accent-blue">Cosas a mandar</h2>
-                <p>1. Copia de INE<br>
-                    2. Comprobante de domicilio<br>
-                    3. Formato de adopción
-                </p>
-                <a class="block gutter-margin-top"
-                    href="./docs/FORMATO DE ADOPCION REFUGIO SAN GREGORIO OCTUBRE  2020.doc" download>
-                    <div class="button button-text brown2-bg">DESCARGAR FORMATO</div>
-                </a>
+                <h3 class="gutter-margin-bottom accent-blue">Cosas a mandar</h3>
+                <ol>
+                    <li>Copia de INE</li>
+                    <li>Comprobante de domicilio</li>
+                    <li><a href="./docs/FORMATO DE ADOPCION REFUGIO SAN GREGORIO OCTUBRE  2020.doc">Formato de adopción</a></li>
+                </ol>
             </div>
-
             <div class="four columns card text-center rounded" style="padding-top: 0; padding-bottom: 0;">
-                <h2 class="accent-blue" style="line-height: 6rem;">Contacto</h2>
+                <h3 class="accent-blue">Contacto</h3>
                 <a class="button-text brown3" href="https://api.whatsapp.com/send?phone=+5215539990498"
                     target="_blank">whatsapp</a>
                 <a class="button-text brown3" href="m.me/RefugioSanGregorio" target="_blank">Facebook</a>
             </div>
         </div>
 
+        <div class="block">
+            <button class="six columns brown2-bg gutter-margin-bottom"
+                href="./docs/FORMATO DE ADOPCION REFUGIO SAN GREGORIO OCTUBRE  2020.doc" download>
+                <p class="white button-text ">DESCARGAR FORMATO</p>
+            </button>
 
-        <div class="twelve columns double-col-margin-top">
-            <div class="eight columns two-offset text-center half-gutter-margin-vertical">
-                <a class="block" href="./adoptar">
-                    <div class="dark-blue-bg white button button-text">VER PERROS EN ADOPCIÓN</div>
-                </a>
-            </div>
+            <button class="six columns block dark-blue-bg" href="./adoptar">
+                <p class=" white button-text">VER PERROS EN ADOPCIÓN</p>
+            </button>
         </div>
+
     </div>
 
     <a name="Donar"></a>
     <div class="container top-margin">
-        <h1 class="gutter-margin-bottom accent-blue full column">Donar</h1>
+        <h2 class="gutter-margin-bottom accent-blue full column">Donar</h2>
         <div class="three columns col-margin-bottom margin-none">
-            <h2 class="accent-blue">Banamex</h2>
+            <h3 class="accent-blue">Banamex</h3>
             <p class="half-gutter-margin-bottom">4766 8412 6025 2799</p>
             <p class="gutter-margin-bottom">4766 8415 8078 5098</p>
-            <h2 class="accent-blue">Banorte</h2>
+            <h3 class="accent-blue">Banorte</h3>
             <p class="half-gutter-margin-bottom">4915 6630 5302 4965</p>
             <p class="brown2">Cuenta:</p>
             <p class="half-gutter-margin-bottom">06817 17103</p>
             <p class="brown2">Clabe:</p>
             <p class="half-gutter-margin-bottom small-body">072 180 006 817 171 032</p>
-            <a class="block gutter-margin-top" href="http://www.paypal.me/refugiosangregorio" target="_blank">
-                <div class="button button-text dark-blue-bg">Paypal</div>
-            </a>
+            <button class="block gutter-margin-top dark-blue-bg" href="http://www.paypal.me/refugiosangregorio" target="_blank">
+                <p class="button-text ">Paypal</p>
+            </button>
         </div>
         <div class="eight columns float-right">
             <p class="justify gutter-margin-bottom">Todo el dinero de las donaciones se usa en los perros, nos
@@ -225,11 +226,11 @@
         </div>
     </div>
 
-    <!Footer />
+    <!-- Footer -->
     <footer class="dark-blue-bg double-col-margin-top">
         <div class="container white">
             <div class="half-gutter-padding-vertical text-center">
-                <h2 class="logo-sec">Refugio San Gregorio</h2>
+                <h2 class="super-secondary-title logo-sec lh-1-5">Refugio San Gregorio</h2>
                 <hr class="twelve columns half-gutter-margin-vertical">
                 <div class="four columns margin-none gutter-margin-bottom">
                     <a class="four columns important-link half-gutter-margin-bottom" href="#Inicio">NOSOTROS</a>

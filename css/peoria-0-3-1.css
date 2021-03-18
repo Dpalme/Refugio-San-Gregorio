@@ -62,7 +62,7 @@
 	/* Fonts
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
 	--font-face: 'Montserrat', Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 
 	/* Grid values
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -106,10 +106,18 @@ input[type="reset"],
 input[type="button"]{
 	color: var(--white);
 	border: none;
-	border-radius: 5px;
+	border-radius: 8px;
+	padding-left: 40px;
+	padding-right: 40px;
 	cursor: pointer;
 	text-align: center;
 	outline: none; }
+li {
+	font-size: 1.25rem;
+	margin-bottom: var(--half-gutter); }
+section {
+	padding-left: 20px;
+	padding-right: 20px; }
 a:hover 				{ color: var(--blue);         }
 footer div a,
 footer div a:visited 	{ color: var(--white);        }
@@ -118,12 +126,12 @@ footer div a:visited 	{ color: var(--white);        }
 /* Font Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .super-title, .main-title,
-h1, h3 {
+h1, h2 {
 	font-style: normal;
 	text-transform: uppercase;
 	font-weight: 800;
-	line-height: 6rem; }
-h2, h4, 
+	line-height: 1rem; }
+h3, h4, 
 .super-secondary-title,
 .secondary-title {
 	font-style: normal;
@@ -131,7 +139,7 @@ h2, h4,
 }
 .body-text, .secondary-body,
 .small-body,.links, .button-text,
-p, b {
+p, b, li {
 	font-style: normal;
 	font-weight: 300; }
 .super-title,
@@ -153,20 +161,21 @@ h4 {
 	line-height: 2rem; }
 .body-text,
 p, body {
-	font-size: 1rem;
+	font-size: 1.125rem;
 	line-height: 1.5rem}
 .small-body {
-	font-size: .85rem;
-	line-height: 1rem; }
+	font-size: 1rem;
+	line-height: 1.5rem; }
 a,
 a:visited,
 a:active,
 .links {
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 1.25rem;
 	line-height: 1.5rem;
 	cursor: pointer;
-	text-decoration: none; }
+	text-decoration: underline;
+	color: inherit; }
 .important-link,
 .important-link:hover,
 .important-link:active,
@@ -179,7 +188,8 @@ a:active,
 .button-text {
 	font-size: 2rem;
 	text-transform: uppercase;
-	line-height: 6rem; }
+	line-height: 6rem;
+	text-decoration: none;}
 .justify {
 	text-align: justify;
 	text-align-last: left;
@@ -190,6 +200,7 @@ b 								{ color: var(--black);        			}
 .text-left 						{ text-align: left;           			}
 .text-center 					{ text-align: center;         			}
 .lh-1 					        { line-height: 2rem;         			}
+.lh-1-5 					    { line-height: 3rem;         			}
 
 /* Selection
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -239,6 +250,7 @@ b 								{ color: var(--black);        			}
 .float-right 					{ float: right !important;    }
 .float-left 					{ float: left !important;     }
 .image-cover 					{ object-fit: cover;          }
+.image-contain 					{ object-fit: contain; object-position: left; }
 .background-cover           	{ background-size: cover;     }
 .relative 						{ position: relative;         }
 .double-gutter-height 			{ height: var(--double-gutter)}
@@ -395,7 +407,7 @@ label > .label-body {
 .container.top-margin {
   position: relative;
   width: 90%;
-  max-width: 1140px;
+  max-width: 1240px;
   margin: 0 auto;
 	padding-left: 5%;
   padding-right: 5%;}
@@ -418,6 +430,7 @@ label > .label-body {
 
 .inline 						{ display: inline;            }
 .block							{ display: block;             }
+.inline-block					{ display: inline-block;      }
 .display-none					{ display: none;              }
 
 .fixed							{ position: fixed;            }

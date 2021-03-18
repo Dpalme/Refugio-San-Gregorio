@@ -9,18 +9,6 @@
 .logo-sec 								{ color: var(--logo-sec); }
 .logo-sec-bg 							{ background-color: var(--logo-sec); }
 
-p{
-	font-size: 2em;
-	color: var(--brown3);
-	line-height: 150%;
-}
-
-p.small-body {
-	font-size: 1.8rem;
-	color: var(--brown3);
-	line-height: 150%;
-}
-
 .line {
 	background-color: var(--white);
 }
