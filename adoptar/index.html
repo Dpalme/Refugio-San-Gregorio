@@ -27,12 +27,12 @@
 
     <!-- CSS -->
     <link rel='stylesheet' href='https://dpalmer.in/Peoria/css/normalize.css'>
-    <link rel='stylesheet' href='../css/peoria-0-3-1.css'>
+    <link rel='stylesheet' href='https://dpalmer.in/Peoria/css/peoria-0-6-0.css'>
     <link rel="stylesheet" href="../css/custom-styles.css" />
 
     <!-- JS -->
-    <script src='https://dpalmer.in/Peoria/peoria.js'></script>
-    <script src='./js/perritos.js'></script>
+    <script src='https://dpalmer.in/Peoria/peoria-3.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
     <script src='./js/main.js'></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4050GYQB1"></script>
@@ -46,70 +46,53 @@
 
         gtag('config', 'G-B4050GYQB1');
     </script>
+    <style>
+        .background-cover {
+            background-attachment: initial !important;
+        }
+    </style>
 </head>
 
-<body onload="start()">
-    <header class="half-gutter-padding-vertical fixed front top dark-blue-bg full column">
-        <div class="container relative margin-none margin-auto-sides">
-            <a class="ten columns margin-none flex-wrap" href="../">
-                <img src="../img/Logotipo Neg.png" class="gutter-height" />
-            </a>
-
-            <div class="hamburger absolute right half-gutter-margin-right"
-                onclick="document.querySelector('ul').classList.toggle('open');">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+<body>
+    <section>
+        <h1 class="accent-blue">Conoce a nuestros perritos en adopción</h1>
+    </section>
+    <section>
+        <div id="content" class="grid">
         </div>
-
-        <ul class="nav-links" id="navLinks">
-            <div class="absolute-center mid-gray">
-                <li><a class="header-link important-link full column"
-                        onclick="document.querySelector('ul').classList.toggle('open');"
-                        href="../#Nosotros">Nosotros</a>
-                </li>
-                <li><a class="header-link important-link full column"
-                        onclick="document.querySelector('ul').classList.toggle('open');" href="../#Adoptar">Adoptar</a>
-                </li>
-                <li><a class="header-link important-link full column"
-                        onclick="document.querySelector('ul').classList.toggle('open');" href="../#Donar">Donar</a>
-                </li>
-                <div class="margin-auto text-center">
-                    <a class="four columns half-gutter-margin-bottom" target="_blank"
-                        href="https://www.facebook.com/RefugioSanGregorio/">
-                        <svg height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5 5.5V3.5C5 2.948 5.448 2.5 6 2.5H7V0H5C3.343 0 2 1.343 2 3V5.5H0V8H2V16H5V8H7L8 5.5H5Z"
-                                fill="white" />
-                        </svg>
+    </section>
+    <section style="box-sizing: border-box;overflow:scroll" id="overlay" class="fullscreen front-2 fixed top left">
+        <div class="rounded-sm overflow-h mid-white-bg grid">
+            <span style="font-size:3rem;cursor:pointer" onclick="delete_overlay()"
+                class="absolute right top red p-md">X</span>
+            <div class="col-6 background-cover" id="o-img">
+            </div>
+            <div id="card-info" class="col-6 relative p-md" style="justify-self: center;">
+                <h2 class="d-inline lh-md" id="o-name">Prueba</h2>
+                <a target="_blank" id="share-btn" class="ml-sm d-inline">
+                    <img src="./img/share.svg" class="h-md w-md">
+                </a>
+                <p class="lh-md" id="o-sexo">Hembra</p>
+                <p id="o-edad">23 meses</p>
+                <p class="dark-blue">Protocolo de salúd completo</p>
+                <div class="my-lg">
+                    <h4 class="d-block lh-lg">Contacto</h4>
+                    <a href="https://api.whatsapp.com/send?phone=+5215539990498" target="_blank" class="mr-sm">
+                        <img src="./img/whatsapp.svg" class="h-md w-md">
                     </a>
-                    <a class="four columns half-gutter-margin-bottom" target="_blank"
-                        href="https://twitter.com/GregorioRefugio">
-                        <svg height="16" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M16 1.87231C15.405 2.13331 14.771 2.30631 14.11 2.39031C14.79 1.98431 15.309 1.34631 15.553 0.577313C14.919 0.955313 14.219 1.22231 13.473 1.37131C12.871 0.730313 12.013 0.333313 11.077 0.333313C9.261 0.333313 7.799 1.80731 7.799 3.61431C7.799 3.87431 7.821 4.12431 7.875 4.36231C5.148 4.22931 2.735 2.92231 1.114 0.931313C0.831 1.42231 0.665 1.98431 0.665 2.58931C0.665 3.72531 1.25 4.73231 2.122 5.31531C1.595 5.30531 1.078 5.15231 0.64 4.91131C0.64 4.92131 0.64 4.93431 0.64 4.94731C0.64 6.54131 1.777 7.86531 3.268 8.17031C3.001 8.24331 2.71 8.27831 2.408 8.27831C2.198 8.27831 1.986 8.26631 1.787 8.22231C2.212 9.52131 3.418 10.4763 4.852 10.5073C3.736 11.3803 2.319 11.9063 0.785 11.9063C0.516 11.9063 0.258 11.8943 0 11.8613C1.453 12.7983 3.175 13.3333 5.032 13.3333C11.068 13.3333 14.368 8.33331 14.368 3.99931C14.368 3.85431 14.363 3.71431 14.356 3.57531C15.007 3.11331 15.554 2.53631 16 1.87231Z"
-                                fill="white" />
-                        </svg>
-                    </a>
-                    <a class="four columns half-gutter-margin-bottom" target="_blank"
-                        href="https://www.instagram.com/refugio_san_gregorio/">
-                        <svg height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M5 0H11C13.761 0 16 2.239 16 5V11C16 13.761 13.761 16 11 16H5C2.239 16 0 13.761 0 11V5C0 2.239 2.239 0 5 0ZM11 14.5C12.93 14.5 14.5 12.93 14.5 11V5C14.5 3.07 12.93 1.5 11 1.5H5C3.07 1.5 1.5 3.07 1.5 5V11C1.5 12.93 3.07 14.5 5 14.5H11ZM4 8C4 5.791 5.791 4 8 4C10.209 4 12 5.791 12 8C12 10.209 10.209 12 8 12C5.791 12 4 10.209 4 8ZM5.5 8C5.5 9.378 6.622 10.5 8 10.5C9.378 10.5 10.5 9.378 10.5 8C10.5 6.621 9.378 5.5 8 5.5C6.622 5.5 5.5 6.621 5.5 8ZM12.833 3.7C12.833 3.99437 12.5944 4.233 12.3 4.233C12.0057 4.233 11.767 3.99437 11.767 3.7C11.767 3.40564 12.0057 3.167 12.3 3.167C12.5944 3.167 12.833 3.40564 12.833 3.7Z"
-                                fill="white" />
-                        </svg>
+                    <a href="https://m.me/RefugioSanGregorio" target="_blank" class="image-cover">
+                        <img src="./img/fb.svg" class="h-md w-md">
                     </a>
                 </div>
+                <a href="../docs/FORMATO DE ADOPCION REFUGIO SAN GREGORIO OCTUBRE  2020.doc"
+                    class="button d-block rounded-lg m-n">
+                    <div style="font-size: 1.5rem;" class="px-md lh-md rounded-lg">Descargar Formato</div>
+                </a>
             </div>
-        </ul>
-    </header>
-
-    <main class="container top-margin">
-        <h1 class="full column accent-blue">Conoce a nuestros perritos en adopción</h1>
-        <span id="content">
-        </span>
-    </main>
+        </div>
+        <div style="background-color: #000000cc;cursor:pointer" onclick="delete_overlay()"
+            class="w-f h-f fixed back top left"></div>
+    </section>
     <div class="col-margin-top"></div>
 </body>
 
