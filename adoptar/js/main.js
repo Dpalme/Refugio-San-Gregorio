@@ -26,7 +26,7 @@ function create_option(img_url, sex, age, name, id_) {
                         }), object({
                             type: 'p',
                             class: 'd-inline small-body bold',
-                            innerText: age + ' meses'
+                            innerText: age
                         })
                     ]
                 })
