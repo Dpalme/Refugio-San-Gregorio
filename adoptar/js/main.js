@@ -64,6 +64,7 @@ function delete_overlay() {
 }
 
 $.get('https://giddy-iodized-income.glitch.me/perros', function (data) {
+    clearContent();
     dogs = data.dogs;
     dogs.forEach(dog => {
         addToContent(create_option(dog.img, dog.sexo, dog.edad, dog.nombre, dog.id))
