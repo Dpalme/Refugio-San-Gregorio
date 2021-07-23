@@ -1,13 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
 :root {
 	/* Colors */
+	--white: #F4F6F8;
+    --mid-white: #F0F0F3;
+    --mid-grey: #CAD0D7;
+    --greyed-out: #A9B0BB;
+    --black: #151617;
+    --dark-blue: #20253b;
+    --blue: #73B0F4;
+    --orange: #FB836F;
+    --red: #FF959D;
+    --yellow: #FFD78C;
+    --green: #B4DF80;
+    --pink: #F199CE;
+    --purple: #B3A4EE;
+    --brown: #F4D0B5;
 	--logo-main: #083591;
 	--logo-sec: #A67C52;
+	--title-face: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;;
+    --font-face: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    --mono-font-face: 'Inconsolata', 'Courier New', Courier, monospace;
+	font-size: 16px;
+}
+
+.title-1, .title-2,
+.title-3, .title-4,
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-face);
+    font-weight: 700;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+p, .p {
+	font-weight: 300;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	margin-bottom: 0.5rem;
+}
+
+button, .button {
+	background: linear-gradient(to right, var(--logo-sec) 65%, var(--dark-blue) 65%);
+    background-size: 300% 100%;
+    background-position: right bottom;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+a, a:visited {
+	color: inherit;
 }
 
 .logo-main 								{ color: var(--logo-main); }
 .logo-main-bg 							{ background-color: var(--logo-main); }
 .logo-sec 								{ color: var(--logo-sec); }
 .logo-sec-bg 							{ background-color: var(--logo-sec); }
+
+.flex-center {
+	display: flex;
+	align-items: center;
+}
+
+section {
+	padding: 100px 20px 100px 20px;
+	width: 100%;
+}
+
+.sticky {
+	position: sticky;
+}
 
 .line {
 	background-color: var(--white);
@@ -38,4 +103,30 @@
 	line-height: 6rem;
 	font-weight: 300;
 	text-decoration: underline;
+}
+
+.h-md {
+	height: 32px;
+}
+
+.w-md {
+	width: 32px;
+}
+
+.my-lg {
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.background-cover {
+	background-position: center;
+	background-size: cover;
+}
+
+.rounded-lg {
+	border-radius: 100px;
 }
